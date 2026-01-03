@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.env.*
+
+# Virtual environment
+venv/
+backend/venv/
+
+# Django
+db.sqlite3
+staticfiles/
+
+# Node
+node_modules/
+dist/
