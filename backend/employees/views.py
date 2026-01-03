@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
+from .models import EmployeeProfile
+from .serializers import EmployeeProfileSerializer
+from accounts.permissions import IsAdminOrSelf
 
-# Create your views here.
+class EmployeeProfileDetailView(generics.RetrieveUpdateAPIView):
+    queryset = EmployeeProfile.objects.all()
+    serializer_class = EmployeeProfileSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrSelf]
