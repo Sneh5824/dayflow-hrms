@@ -1,0 +1,76 @@
+.calendar {
+  flex: 1;
+  overflow-y: auto;
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.calendar-grid {
+  display: flex;
+  min-height: 100%;
+}
+
+.time-column {
+  width: 72px;
+  flex-shrink: 0;
+  border-right: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.time-slot {
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+
+.time-label {
+  font-size: 11px;
+  color: #64748b;
+  transform: translateY(-8px);
+  font-weight: 500;
+}
+
+.events-column {
+  flex: 1;
+  position: relative;
+}
+
+.hour-row {
+  height: 60px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.events-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 12px;
+}
+
+.event-block {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-block:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.event-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}

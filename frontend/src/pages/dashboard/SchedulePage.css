@@ -1,0 +1,81 @@
+.schedule-page {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.schedule-sidebar {
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #e2e8f0;
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.schedule-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.schedule-header {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.date-navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.nav-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.15s;
+}
+
+.nav-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.today-btn {
+  padding: 6px 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.today-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.current-date {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}

@@ -20,6 +20,12 @@ class User(AbstractUser):
         null=True,
         blank=True
     )
+    
+    phone = models.CharField(
+        max_length=20,
+        null=True,
+        blank=True
+    )
 
     def __str__(self):
         return f"{self.username} ({self.role})"
